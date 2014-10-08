@@ -3,5 +3,5 @@ import views
 
 urlpatterns = patterns(
     '',
-    url(r'^get_csv/', views.get_csv, name='get_csv'),
+    url(r'^$', views.get_csv, name='get_csv'),
 )
