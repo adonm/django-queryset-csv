@@ -88,3 +88,5 @@ views.py::
   def csv_view(request):
       people = Person.objects.values('name', 'favorite_food__name')
       return render_to_csv_response(people, delimiter='|')
+
+For more details on possible arguments, see the documentation on `DictWriter <https://docs.python.org/2/library/csv.html#csv.DictWriter>`_.
